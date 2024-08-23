@@ -1,0 +1,167 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    gap: 3em;
+  }
+  
+  @property --loaderAngle1 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @property --loaderAngle2 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @property --loaderAngle3 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @property --loaderAngle4 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @property --loaderAngle5 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @property --loaderAngle6 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @property --loaderAngle7 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @property --loaderAngle8 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @property --loaderAngle9 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  .loader {
+    --duration: 2.5s;
+    --delay: 0.05s;
+    font-size: 160px;
+    width: 1em;
+    height: 1em;
+    background: radial-gradient(circle at calc(cos(var(--loaderAngle1) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle1) - 90deg) * 30% + 50%), #fff 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle2) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle2) - 90deg) * 30% + 50%), #fff 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle3) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle3) - 90deg) * 30% + 50%), #fff 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle4) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle4) - 90deg) * 30% + 50%), #fff 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle5) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle5) - 90deg) * 30% + 50%), #fff 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle6) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle6) - 90deg) * 30% + 50%), #fff 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle7) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle7) - 90deg) * 30% + 50%), #fff 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle8) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle8) - 90deg) * 30% + 50%), #fff 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle9) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle9) - 90deg) * 30% + 50%), #fff 20%, transparent 0);
+    background-blend-mode: exclusion;
+    -webkit-animation: loaderAngle1 var(--duration) calc(var(--delay) * -1) infinite, loaderAngle2 var(--duration) calc(var(--delay) * -2) infinite, loaderAngle3 var(--duration) calc(var(--delay) * -3) infinite, loaderAngle4 var(--duration) calc(var(--delay) * -4) infinite, loaderAngle5 var(--duration) calc(var(--delay) * -5) infinite, loaderAngle6 var(--duration) calc(var(--delay) * -6) infinite, loaderAngle7 var(--duration) calc(var(--delay) * -7) infinite, loaderAngle8 var(--duration) calc(var(--delay) * -8) infinite, loaderAngle9 var(--duration) calc(var(--delay) * -9) infinite;
+            animation: loaderAngle1 var(--duration) calc(var(--delay) * -1) infinite, loaderAngle2 var(--duration) calc(var(--delay) * -2) infinite, loaderAngle3 var(--duration) calc(var(--delay) * -3) infinite, loaderAngle4 var(--duration) calc(var(--delay) * -4) infinite, loaderAngle5 var(--duration) calc(var(--delay) * -5) infinite, loaderAngle6 var(--duration) calc(var(--delay) * -6) infinite, loaderAngle7 var(--duration) calc(var(--delay) * -7) infinite, loaderAngle8 var(--duration) calc(var(--delay) * -8) infinite, loaderAngle9 var(--duration) calc(var(--delay) * -9) infinite;
+  }
+  
+  @-webkit-keyframes loaderAngle1 {
+    75%, 100% {
+      --loaderAngle1: 360deg;
+    }
+  }
+  
+  @keyframes loaderAngle1 {
+    75%, 100% {
+      --loaderAngle1: 360deg;
+    }
+  }
+  @-webkit-keyframes loaderAngle2 {
+    75%, 100% {
+      --loaderAngle2: 360deg;
+    }
+  }
+  @keyframes loaderAngle2 {
+    75%, 100% {
+      --loaderAngle2: 360deg;
+    }
+  }
+  @-webkit-keyframes loaderAngle3 {
+    75%, 100% {
+      --loaderAngle3: 360deg;
+    }
+  }
+  @keyframes loaderAngle3 {
+    75%, 100% {
+      --loaderAngle3: 360deg;
+    }
+  }
+  @-webkit-keyframes loaderAngle4 {
+    75%, 100% {
+      --loaderAngle4: 360deg;
+    }
+  }
+  @keyframes loaderAngle4 {
+    75%, 100% {
+      --loaderAngle4: 360deg;
+    }
+  }
+  @-webkit-keyframes loaderAngle5 {
+    75%, 100% {
+      --loaderAngle5: 360deg;
+    }
+  }
+  @keyframes loaderAngle5 {
+    75%, 100% {
+      --loaderAngle5: 360deg;
+    }
+  }
+  @-webkit-keyframes loaderAngle6 {
+    75%, 100% {
+      --loaderAngle6: 360deg;
+    }
+  }
+  @keyframes loaderAngle6 {
+    75%, 100% {
+      --loaderAngle6: 360deg;
+    }
+  }
+  @-webkit-keyframes loaderAngle7 {
+    75%, 100% {
+      --loaderAngle7: 360deg;
+    }
+  }
+  @keyframes loaderAngle7 {
+    75%, 100% {
+      --loaderAngle7: 360deg;
+    }
+  }
+  @-webkit-keyframes loaderAngle8 {
+    75%, 100% {
+      --loaderAngle8: 360deg;
+    }
+  }
+  @keyframes loaderAngle8 {
+    75%, 100% {
+      --loaderAngle8: 360deg;
+    }
+  }
+  @-webkit-keyframes loaderAngle9 {
+    75%, 100% {
+      --loaderAngle9: 360deg;
+    }
+  }
+  @keyframes loaderAngle9 {
+    75%, 100% {
+      --loaderAngle9: 360deg;
+    }
+  }
+  .color {
+    background: radial-gradient(circle at calc(cos(var(--loaderAngle1) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle1) - 90deg) * 30% + 50%), rgba(255, 0, 0, 0.6) 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle2) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle2) - 90deg) * 30% + 50%), rgba(255, 170, 0, 0.6) 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle3) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle3) - 90deg) * 30% + 50%), rgba(170, 255, 0, 0.6) 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle4) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle4) - 90deg) * 30% + 50%), rgba(0, 255, 0, 0.6) 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle5) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle5) - 90deg) * 30% + 50%), rgba(0, 255, 170, 0.6) 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle6) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle6) - 90deg) * 30% + 50%), rgba(0, 170, 255, 0.6) 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle7) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle7) - 90deg) * 30% + 50%), rgba(0, 0, 255, 0.6) 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle8) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle8) - 90deg) * 30% + 50%), rgba(170, 0, 255, 0.6) 20%, transparent 0), radial-gradient(circle at calc(cos(var(--loaderAngle9) - 90deg) * 30% + 50%) calc(sin(var(--loaderAngle9) - 90deg) * 30% + 50%), rgba(255, 0, 170, 0.6) 20%, transparent 0);
+    background-blend-mode: screen;
+  }
